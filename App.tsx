@@ -23,6 +23,11 @@ const App: React.FC = () => {
     return matchesSearch && matchesCategory && matchesDiameter;
   });
 
+  const port = process.env.PORT || 3000;
+  App.listen(port, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en el puerto ${port}`);
+  });
+
   const handleAddToCart = (product: Product) => {
     setOrderList(prev => [...prev, product]);
     alert(`${product.name} added to order list.`);
