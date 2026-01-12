@@ -1,0 +1,8 @@
+
+{
+  "name": "Bronze Parts Catalog Pro",
+  "description": "A high-end industrial catalog for premium bronze components featuring real-time search, AI-powered parts advisory, and a professional order management system.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
